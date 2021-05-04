@@ -22,8 +22,11 @@
 ![](testing-image/conditional-compilation/set1/2.png)
 ![](testing-image/conditional-compilation/set1/3.png)
 
-# CTRL-P
+# Date
 ![](testing-image/date/1.png)
+
+# CTRL-P
+![](testing-image/CTRL-P.png)
 
 ### date.c
 ![](testing-image/date.c.png)
