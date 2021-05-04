@@ -24,3 +24,27 @@
 
 # CTRL-P
 ![](testing-image/date/1.png)
+
+### date.c
+![](testing-image/date.c.png)
+
+### proc.c
+![](testing-image/proc.c.png)
+
+### proc.h
+![](testing-image/proc.h.png)
+
+### syscall.c
+![](testing-image/syscall.c.png)
+
+### syscall.h
+![](testing-image/syscall.h.png)
+
+### sysproc.c
+![](testing-image/sysproc.c.png)
+
+### user.h
+![](testing-image/user.h.png)
+
+### usys.S
+![](testing-image/usys.S.png)
