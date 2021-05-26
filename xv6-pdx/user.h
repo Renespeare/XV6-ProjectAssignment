@@ -44,6 +44,15 @@ int atoi(const char*);
 int date(struct rtcdate*);
 #endif // CS333_P1
 
+#ifdef CS333_P2
+uint getuid(void); // UID of  the  current  process
+uint getgid(void); // GID of  the  current  process
+uint getppid(void); // process ID of  the  parent  process
+int setuid(uint); // set UID
+int setgid(uint); //  set GID
+int getprocs(uint max, struct uproc*); // added getprocs func
+#endif //CS333_P2
+
 #ifdef PDX_XV6
 int atoo(const char*);
 int strncmp(const char*, const char*, uint);

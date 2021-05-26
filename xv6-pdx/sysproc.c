@@ -6,6 +6,9 @@
 #include "memlayout.h"
 #include "mmu.h"
 #include "proc.h"
+#ifdef CS333_P2
+#include "uproc.h"
+#endif
 #ifdef PDX_XV6
 #include "pdx-kernel.h"
 #endif // PDX_XV6
@@ -88,6 +91,7 @@ sys_uptime(void)
   return xticks;
 }
 
+#ifdef CS333_P1
 int
 sys_date(void)
 {
@@ -97,6 +101,61 @@ sys_date(void)
   cmostime(d);
   return 0;
 }
+#endif
+
+#ifdef CS333_P2
+int
+sys_getuid(void)
+{
+  return myproc()->uid;
+}
+int
+sys_getgid(void)
+{
+  return myproc()->gid;
+}
+int
+sys_getppid(void)
+{
+  if(myproc()->pid == 1)
+    return myproc()->pid;
+  return myproc()->parent->pid;
+}
+int
+sys_setuid(void)
+{
+  int tmp;
+  if(argint(0,&tmp) < 0 || tmp > 32767 || tmp < 0)
+    return -1;
+  myproc()->uid = (uint)tmp;
+  return 0;
+}
+int
+sys_setgid(void)
+{
+  int tmp;
+  if(argint(0,&tmp) < 0 || tmp > 32767 || tmp < 0)
+    return -1;
+  myproc()->gid = (uint)tmp;
+  return 0;
+}
+
+int
+sys_getprocs(void)
+{
+  int max;
+  struct uproc *table;
+
+  if(argint(0, &max) < 0){
+    return -1;
+  }
+
+	if(argptr(1, (void*)&table, sizeof(struct uproc) * max) < 0){
+    return -1;
+  }
+  return getprocs(max, table);
+}
+#endif
 
 #ifdef PDX_XV6
 // shutdown QEMU

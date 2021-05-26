@@ -1,53 +1,73 @@
-# Compilation Test
-![](usertests/compilation-test/1.png)
-![](usertests/compilation-test/2.png)
+# Running Test
+
+### testsetuid
+
+![](usertests/running-test/testsetuid.png)
+
+### testuidgid
+
+![](usertests/running-test/testuidgid.png)
+
+### p2-test
+
+![](usertests/running-test/p2-test-1st.png)
+![](usertests/running-test/p2-test-2nd.png)
+
+### ps
+
+![](usertests/running-test/ps.png)
+
+### Ctrl+p
+
+![](usertests/running-test/ctrl+p.png)
+
+# Modified Code
+
 ### Makefile
-![](usertests/compilation-test/code.png)
 
-# System Call Tracing
-![](usertests/syscall-tracing/1.png)
-![](usertests/syscall-tracing/2.png)
-![](usertests/syscall-tracing/3.png)
-### Makefile
-![](usertests/syscall-tracing/code.png)
+![](usertests/Makefile.png)
 
-# Conditional Compilation
-## CS333_PROJECT set 0
-![](usertests/conditional-compilation/set0/1.png)
-![](usertests/conditional-compilation/set0/2.png)
-![](usertests/conditional-compilation/set0/3.png)
+### defs.h
 
-## CS333_PROJECT set 1
-![](usertests/conditional-compilation/set1/1.png)
-![](usertests/conditional-compilation/set1/2.png)
-![](usertests/conditional-compilation/set1/3.png)
-
-# Date
-![](usertests/date/1.png)
-
-# CTRL-P
-![](usertests/CTRL-P.png)
-
-### date.c
-![](usertests/date.c.png)
+![](usertests/defs.h.png)
 
 ### proc.c
-![](usertests/proc.c.png)
+
+![](usertests/proc.c1.png)
+![](usertests/proc.c2.png)
+![](usertests/proc.c3.png)
+![](usertests/proc.c4.png)
 
 ### proc.h
+
 ![](usertests/proc.h.png)
 
 ### syscall.c
-![](usertests/syscall.c.png)
+
+![](usertests/syscall.c1.png)
+![](usertests/syscall.c2.png)
 
 ### syscall.h
+
 ![](usertests/syscall.h.png)
 
 ### sysproc.c
-![](usertests/sysproc.c.png)
+
+![](usertests/sysproc.c1.png)
+![](usertests/sysproc.c2.png)
 
 ### user.h
+
 ![](usertests/user.h.png)
 
 ### usys.S
+
 ![](usertests/usys.S.png)
+
+# Added 3 new files
+
+### ps.c
+
+### testsetuid.c
+
+### time.c
